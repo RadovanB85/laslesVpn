@@ -1,0 +1,24 @@
+{
+  "name": "laslesvpn",
+  "version": "1.0.0",
+  "description": "laslesVpn",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RadovanB85/laslesVpn.git"
+  },
+  "author": "Radovan Buljic",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RadovanB85/laslesVpn/issues"
+  },
+  "homepage": "https://github.com/RadovanB85/laslesVpn#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.49.9"
+  }
+}
