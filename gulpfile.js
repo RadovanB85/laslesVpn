@@ -1,8 +1,7 @@
 const gulp = require("gulp"),
-  sass = require("gulp-sass")(require("sass")),
-  livereload = require("gulp-livereload");
+  sass = require("gulp-sass")(require("sass"));
 
-const styleSRC = "./src/scss/**/*.scss";
+const styleSRC = "./src/sass/**/*.scss";
 const styleDist = "./dist/css";
 
 function css() {
