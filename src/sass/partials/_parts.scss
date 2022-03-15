@@ -1,0 +1,34 @@
+.btn-link {
+  display: block;
+  width: fit-content;
+  text-transform: capitalize;
+  font-size: 80%;
+  line-height: 95%;
+  font-weight: $font_weight_button;
+}
+
+.btn-link-main {
+  padding: $btn_link_padding;
+  border: $btn_link_border;
+  border-radius: $btn_link_border_radius;
+}
+
+.header_manu__humburger {
+  display: block;
+}
+
+.humburger {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 3px;
+  width: 30px;
+  height: 30px;
+}
+
+.humburger_line {
+  display: block;
+  width: 30px;
+  height: 0;
+  border-bottom: 2px solid black;
+}
