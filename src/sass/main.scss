@@ -1,7 +1,15 @@
 // -----------------------------------------
 // Partials
 // -----------------------------------------
-@import "./partials/for_all";
+// `@import "[path to]/normalize-scss/sass/normalize"
+@import "./node_modules/normalize-scss/sass/normalize";
 @import "./partials/colors";
 @import "./partials/variables";
 @import "./partials/mixins";
+@import "./partials/fonts";
+@import "./partials/for_all";
+
+// -----------------------------------------
+// sections
+// -----------------------------------------
+@import "./sections/header_nav_logo";

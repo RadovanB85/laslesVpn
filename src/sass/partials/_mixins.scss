@@ -1,0 +1,4 @@
+@mixin googleFont($font) {
+  $font: unquote($font);
+  @import url("https://fonts.googleapis.com/css2?family=#{$font}:wght@400;500;700&display=swap");
+}

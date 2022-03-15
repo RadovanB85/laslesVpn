@@ -2,4 +2,45 @@
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
+  overflow: hidden;
+  text-rendering: geometricPrecision;
 }
+body {
+  font-family: $font_family_main;
+}
+a {
+  color: $color__grey;
+  text-decoration: none;
+}
+
+@media (min-width: 0px) and (max-width: 480px) {
+  body {
+    font-size: $font_size__main-mobile;
+  }
+}
+@media (min-width: 481px) and (max-width: 768px) {
+  body {
+    font-size: $font_size__main-ipad;
+  }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+  body {
+    font-size: $font_size__main-tablet;
+  }
+}
+@media (min-width: 1025px) and (max-width: 1200px) {
+  body {
+    font-size: $font_size__main;
+  }
+}
+@media screen and (min-width: 1201px) {
+  body {
+    font-size: $font_size__main;
+  }
+}
+
+// 320px — 480px: Mobile devices.
+// 481px — 768px: iPads, Tablets.
+// 769px — 1024px: Small screens, laptops.
+// 1025px — 1200px: Desktops, large screens.
+// 1201px and more — Extra large screens, TV.

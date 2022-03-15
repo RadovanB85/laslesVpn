@@ -1,1 +1,29 @@
-$font_size__main: 16px;
+// -----------------------------------------
+// Fonts, font-size, font-color, font-weight
+// -----------------------------------------
+// size
+$font_size__main: 22px;
+$font_size__main-tablet: 20px;
+$font_size__main-ipad: 18px;
+$font_size__main-mobile: 16px;
+
+// color
+$font_color_main_black: $color__black;
+$font_color__red: $color__main_red;
+$font_color_grey: $color__grey;
+
+// font weight
+$font_weight_main: 400;
+$font_weight_bold: 700;
+$font_weight_button: 500;
+
+// -----------------------------------------
+// main header sizes
+// -----------------------------------------
+$header_logo_nav_container__padding: 45.62px 83px 126.73px 150px;
+$header_logo_nav_container__height: 1506.28px;
+// -----------------------------------------
+// footer sections size
+// -----------------------------------------
+
+$footer_height: 563.12px;
