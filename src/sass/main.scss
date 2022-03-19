@@ -3,6 +3,7 @@
 // -----------------------------------------
 // `@import "[path to]/normalize-scss/sass/normalize"
 @import "./node_modules/normalize-scss/sass/normalize";
+@import "./partials/functions";
 @import "./partials/colors";
 @import "./partials/variables";
 @import "./partials/mixins";

@@ -2,8 +2,8 @@
 // header menu
 // -----------------------------------------------------------------------
 .header_manu__container {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 149px 1fr 233px;
   align-items: center;
   padding: $header_logo_nav_container__padding;
 }
@@ -12,15 +12,16 @@
 // header menu logo
 // -----------------------------------------------------------------------
 .header_manu__logo {
-  flex-grow: 299px;
+  flex-grow: auto;
   display: flex;
   align-items: center;
   gap: 10px;
   vertical-align: middle;
   p {
-    font-size: 100%;
-    line-height: 120%;
-    font-weight: $font_weight_button;
+    font-weight: $header_logo_font_weight;
+    font-size: $header_logo_font_size;
+    line-height: $header_logo_line_height;
+
     span {
       font-weight: bold;
     }
@@ -37,24 +38,32 @@
 // -----------------------------------------------------------------------
 
 .header_manu__links {
-  flex-grow: 3;
-  margin-left: $links_margin_left;
+  padding-left: 10px;
 }
 
 .header_navBar__list {
   display: flex;
   list-style: none;
-  justify-content: baseline;
+  justify-content: center;
+  align-items: center;
   gap: 40px;
+
+  // @include large-screens {
+  //   justify-content: space-between;
+  // }
 }
 
 .header_navBar__item {
+  align-items: center;
   text-transform: capitalize;
   vertical-align: middle;
   a {
-    font-size: 80%;
-    line-height: 95%;
     font-family: $font_weight_main;
+    display: block;
+    font-size: $header_links_font_size;
+    line-height: $header_links_line_height;
+    font-weight: $header_links_font_weight;
+    font-style: $header_links_font_style;
   }
 }
 
@@ -64,26 +73,6 @@
 
 .header_manu__btns {
   display: flex;
-  justify-content: flex-end;
+  background-color: aqua;
   align-items: center;
-  gap: 30px;
-  padding-right: $header_btn_padding;
-}
-
-// -----------------------------------------------------------------------
-
-//  MEDIA QUERIS
-
-// -----------------------------------------------------------------------
-
-@media screen and (min-width: 1441px) {
-  .header_manu__container {
-    justify-content: center;
-  }
-  .header_manu__links {
-    margin-right: $links_margin_right;
-  }
-  .header_navBar__list {
-    justify-content: space-around;
-  }
 }

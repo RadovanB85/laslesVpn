@@ -15,3 +15,27 @@
     clear: both;
   }
 }
+
+@mixin mobile-screens() {
+  @media screen and (max-width: 480px) {
+    @content;
+  }
+}
+
+@mixin ipad-screens() {
+  @media screen and(max-width:768px) {
+    @content;
+  }
+}
+
+@mixin tablet-screens() {
+  @media screen and (max-width: 1200px) {
+    @content;
+  }
+}
+
+@mixin large-screens() {
+  @media screen and(min-width:1500px) {
+    @content;
+  }
+}

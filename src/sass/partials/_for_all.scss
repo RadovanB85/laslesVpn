@@ -3,11 +3,14 @@
   padding: 0px;
   box-sizing: border-box;
   overflow: hidden;
-  text-rendering: geometricPrecision;
+  text-rendering: optimizeLegibility;
 }
-body {
+html {
   font-family: $font_family_main;
-  font-size: $font_size__main;
+  font-size: rem($font_size__main);
+}
+
+body {
   letter-spacing: normal;
   font-style: normal;
 }
@@ -15,38 +18,6 @@ body {
 a {
   color: $color__grey;
   text-decoration: none;
-}
-
-@media (min-width: 0px) and (max-width: 480px) {
-  body {
-    min-width: 320px;
-    font-size: $font_size__main-mobile;
-    line-height: $font_size__main-mobile;
-  }
-}
-@media (min-width: 481px) and (max-width: 768px) {
-  body {
-    font-size: $font_size__main-ipad;
-    line-height: $font_size__main-ipad;
-  }
-}
-@media (min-width: 769px) and (max-width: 1024px) {
-  body {
-    font-size: $font_size__main-tablet;
-    line-height: $font_size__main-tablet;
-  }
-}
-@media (min-width: 1025px) and (max-width: 1440px) {
-  body {
-    font-size: $font_size__main;
-    line-height: $font_size__main;
-  }
-}
-@media screen and (min-width: 1441px) {
-  body {
-    font-size: $font_size__main;
-    line-height: $font_size__main;
-  }
 }
 
 // 320px — 480px: Mobile devices.

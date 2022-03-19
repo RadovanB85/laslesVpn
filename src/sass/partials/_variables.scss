@@ -2,10 +2,7 @@
 // Fonts, font-size, font-color, font-weight
 // -----------------------------------------
 // size
-$font_size__main: 20px;
-$font_size__main-tablet: 18px;
-$font_size__main-ipad: 16px;
-$font_size__main-mobile: 16px;
+$font_size__main: 10px;
 
 // color
 $font_color_main_black: $color__black;
@@ -20,20 +17,25 @@ $font_weight_button: 500;
 // -----------------------------------------
 // main header sizes, logo, nav-bar, btns
 // -----------------------------------------
-$header_logo_nav_container__padding: 45.62px 83px 126.73px 150px;
+$header_logo_nav_container__padding: 45.62px 150px 0px 150px;
 $header_logo_nav_container__height: 1428.66px;
 // logo
 $logo-width: 35px;
 $logo-height: 36.23px;
+$header_logo_font_size: 2rem;
+$header_logo_line_height: 2.4rem;
+$header_logo_font_weight: $font_weight_button;
+
 // header btns
-$header_btn_padding: 67px;
 $btn_link_padding: 13px 45px;
 $btn_link_border: 1px solid $color__main_red;
 $btn_link_border_radius: 50px;
 
 //links
-$links_margin_left: 157px;
-$links_margin_right: 150px;
+$header_links_font_size: 1.6rem;
+$header_links_line_height: 1.9rem;
+$header_links_font_weight: 400rem;
+$header_links_font_style: normal;
 
 // -----------------------------------------
 // footer sections size
