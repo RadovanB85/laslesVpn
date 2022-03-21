@@ -17,7 +17,10 @@ $font_weight_button: 500;
 // -----------------------------------------
 // main header sizes, logo, nav-bar, btns
 // -----------------------------------------
-$header_logo_nav_container__padding: 45.62px 150px 0px 150px;
+$header_logo_nav_container__padding: 45.62px 150px 10px 150px;
+$header_logo_nav_container__padding-tablet: 30.62px 112.5px 10px 112.5px;
+$header_logo_nav_container__padding-ipad: 20.62px 50px 10px 50px;
+$header_logo_nav_container__padding-mobile: 10.62px 37.5px 10px 37.5px;
 $header_logo_nav_container__height: 1428.66px;
 // logo
 $logo-width: 35px;
@@ -34,8 +37,16 @@ $btn_link_border_radius: 50px;
 //links
 $header_links_font_size: 1.6rem;
 $header_links_line_height: 1.9rem;
-$header_links_font_weight: 400rem;
+$header_links_font_weight: 400;
 $header_links_font_style: normal;
+
+// -----------------------------------------
+// HEADER BANNER HEADLINE BTN AND HERO
+// -----------------------------------------
+$header_banner_padding-main: 88.49px 83px 0 150px;
+$header_banner_padding-tablet: 88.49px 83px 0 150px;
+$header_banner_padding-ipad: 88.49px 83px 0 150px;
+$header_banner_padding-mobile: 88.49px 83px 0 150px;
 
 // -----------------------------------------
 // footer sections size

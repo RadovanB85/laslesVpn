@@ -2,22 +2,16 @@
 // MAIN HEADER LINKS
 // -----------------------------------------
 
+.btn-link {
+  @include log_buttons;
+}
+
 .btn {
   padding: $btn_link_padding;
   border: $btn_link_border;
   border-radius: $btn_link_border_radius;
-}
-
-.btn-link {
-  display: block;
-  text-transform: capitalize;
-  width: fit-content;
-  font-size: $header_links_font_size;
-  line-height: $header_links_line_height;
-  font-weight: $header_logo_font_weight;
-}
-
-.btn-link-main {
+  text-align: center;
+  width: 150px;
 }
 
 // -----------------------------------------
@@ -25,15 +19,23 @@
 // -----------------------------------------
 .header_manu__humburger {
   display: none;
+  @include one-thousent {
+    display: block;
+    grid-area: "hamburger";
+    order: 3;
+  }
 }
 
 .humburger {
+  float: right;
   display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 3px;
   width: 30px;
   height: 30px;
+  position: relative;
+  cursor: pointer;
 }
 
 .humburger_line {
@@ -41,4 +43,34 @@
   width: 30px;
   height: 0;
   border-bottom: 2px solid black;
+  transition: all 0.5s ease-in-out;
+}
+
+.active .humburger_line:first-child {
+  position: absolute;
+  top: 50%;
+  transform: rotate(30deg);
+}
+.active .humburger_line:nth-child(even) {
+  display: none;
+}
+
+.active .humburger_line:last-child {
+  position: absolute;
+  top: 50%;
+  transform: rotate(-30deg);
+}
+
+// -----------------------------------------
+// MOBILE HEADER LOG IN AND LOG UP
+// -----------------------------------------
+
+.mobile_log {
+  @include log_buttons;
+  margin: 0 auto;
+  padding: 13px 0;
+}
+
+.mobile_log-up {
+  color: $color__main_red;
 }

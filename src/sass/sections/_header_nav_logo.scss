@@ -6,6 +6,22 @@
   grid-template-columns: 149px 1fr 233px;
   align-items: center;
   padding: $header_logo_nav_container__padding;
+  @include tablet-screens {
+    padding: $header_logo_nav_container__padding-tablet;
+  }
+  @include one-thousent {
+    grid-template-columns: 149px 1fr 50px;
+    grid-template-rows: auto;
+    grid-template-areas: "logo buttons hamburger" "menu menu menu";
+  }
+  @include ipad-screens {
+    padding: $header_logo_nav_container__padding-ipad;
+    grid-template-columns: 149px 1fr 0;
+    grid-template-areas: "logo hamburger hamburger" "menu menu menu";
+  }
+  @include mobile-screens {
+    padding: $header_logo_nav_container__padding-mobile;
+  }
 }
 
 // -----------------------------------------------------------------------
@@ -26,6 +42,10 @@
       font-weight: bold;
     }
   }
+  @include one-thousent {
+    grid-area: "logo";
+    order: 1;
+  }
 }
 
 .svg_logo {
@@ -39,6 +59,17 @@
 
 .header_manu__links {
   padding-left: 10px;
+  display: block;
+  @include large-screens {
+    padding-right: 150px;
+    padding-left: 157px;
+  }
+  @include one-thousent {
+    order: 4;
+    grid-area: menu;
+    padding-left: 0;
+    display: none;
+  }
 }
 
 .header_navBar__list {
@@ -47,10 +78,22 @@
   justify-content: center;
   align-items: center;
   gap: 40px;
-
-  // @include large-screens {
-  //   justify-content: space-between;
-  // }
+  @include one-thousent {
+    justify-content: space-evenly;
+    padding-top: 15px;
+  }
+  @include large-screens {
+    justify-content: space-between;
+  }
+  @include tablet-screens {
+    justify-content: space-around;
+    gap: 0;
+  }
+  @include mobile-screens {
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 15px;
+  }
 }
 
 .header_navBar__item {
@@ -58,7 +101,7 @@
   text-transform: capitalize;
   vertical-align: middle;
   a {
-    font-family: $font_weight_main;
+    font-family: $font_family_main;
     display: block;
     font-size: $header_links_font_size;
     line-height: $header_links_line_height;
@@ -73,6 +116,41 @@
 
 .header_manu__btns {
   display: flex;
-  background-color: aqua;
   align-items: center;
+  gap: 30px;
+  @include tablet-screens {
+    justify-content: flex-end;
+    gap: auto;
+  }
+  @include one-thousent {
+    grid-area: "buttons";
+    order: 2;
+  }
+  @include ipad-screens {
+    gap: 10px;
+    display: none;
+  }
+}
+
+// -----------------------------------------
+// MOBILE HEADER LOG IN AND LOG UP
+// -----------------------------------------
+
+.header_log_container-mobile {
+  display: none;
+  border-top: 2px solid black;
+  justify-content: center;
+  align-items: center;
+
+  @include mobile-screens {
+    display: flex;
+  }
+}
+
+.header_log_in {
+  width: 50%;
+}
+
+.header_log_up {
+  width: 50%;
 }
