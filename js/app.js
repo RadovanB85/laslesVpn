@@ -5,8 +5,6 @@ const ham = document.querySelector(".humburger");
 const headerManu = document.querySelector(".header_manu__links");
 const headerButtons = document.querySelector(".header_manu__btns");
 
-console.log(ham);
-
 ham.addEventListener("click", function (e) {
   e.stopPropagation();
   ham.classList.toggle("active");

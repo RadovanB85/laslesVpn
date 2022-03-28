@@ -2,7 +2,6 @@
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
-  overflow: hidden;
   text-rendering: optimizeLegibility;
 }
 html {
@@ -17,14 +16,37 @@ body {
 }
 
 h1 {
-  font-size: rem(50px);
-  line-height: rem(70px);
+  font-size: 5rem;
+  line-height: 7rem;
   font-weight: $font_weight_button;
   color: $color__black;
   font-style: normal;
   span {
     font-weight: 700;
   }
+
+  @include one-thousent {
+    font-size: 2.5rem;
+    line-height: 4.5rem;
+  }
+
+  @include tablet-screens {
+    font-size: 3rem;
+    line-height: 5rem;
+  }
+
+  @include ipad-screens {
+    font-size: 2.5rem;
+    line-height: 4.5rem;
+  }
+}
+
+p {
+  font-family: $font_family_main;
+  font-size: 1.6rem;
+  line-height: 3rem;
+  font-family: $font_weight_main;
+  font-style: normal;
 }
 
 a {

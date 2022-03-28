@@ -12,6 +12,7 @@
   border-radius: $btn_link_border_radius;
   text-align: center;
   width: 150px;
+  height: 45px;
 }
 
 // -----------------------------------------
@@ -73,4 +74,34 @@
 
 .mobile_log-up {
   color: $color__main_red;
+}
+
+// -----------------------------------------
+// HEADER BANNER HEADLINE BUTTON MAIN
+// -----------------------------------------
+
+.header_banner-headline-button {
+  font-size: 1.6rem;
+  line-height: 2.5rem;
+  font-style: normal;
+  font-weight: 700;
+  padding: 1.75rem 7.75rem;
+  color: #ffffff;
+  text-transform: capitalize;
+  background-color: #f53838;
+  width: fit-content;
+  border-radius: 10px;
+  position: relative;
+  z-index: 1;
+}
+.button_shadow {
+  z-index: 0;
+  position: absolute;
+  width: 84.85%;
+  height: 100%;
+  left: 19.09px;
+  top: 25.29px;
+  background-color: rgba(245, 56, 56, 0.35);
+  filter: blur(54px);
+  border-radius: 10px;
 }
