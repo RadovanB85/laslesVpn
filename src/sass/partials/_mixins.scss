@@ -52,6 +52,12 @@
   }
 }
 
+@mixin base-width() {
+  @media screen and (max-width: 1439px) {
+    @content;
+  }
+}
+
 @mixin large-screens() {
   @media screen and(min-width:1500px) {
     @content;
