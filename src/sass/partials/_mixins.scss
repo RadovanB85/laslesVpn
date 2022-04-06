@@ -28,6 +28,15 @@
   }
 }
 
+@mixin header2(
+  $font_size: 3.5rem,
+  $line_height: 5rem,
+  $font_weight: $font_weight_button
+) {
+  font-size: $font_size;
+  line-height: $line_height;
+  font-weight: $font-weight;
+}
 @mixin mobile-screens() {
   @media screen and (max-width: 480px) {
     @content;
@@ -53,13 +62,13 @@
 }
 
 @mixin base-width() {
-  @media screen and (max-width: 1439px) {
+  @media screen and (max-width: 1390px) {
     @content;
   }
 }
 
 @mixin large-screens() {
-  @media screen and(min-width:1500px) {
+  @media screen and(min-width:1441px) {
     @content;
   }
 }

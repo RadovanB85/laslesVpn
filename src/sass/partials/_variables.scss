@@ -54,13 +54,30 @@ $header_banner__headline_padding-main: 78.49px 83px 0 150px;
 // -----------------------------------------
 // HEADER MAIN OVERVIEW
 // -----------------------------------------
-// wrapper
-$header_main_owerwiev_wraper__padding: 102.49px 150px 53.81px 150px;
-$header_main_owerwiev_wraper__padding-tablet: 90px 120px 53px 120px;
-$header_main_owerwiev_wraper__padding-ipad: 90px 85px 53px 80px;
-$header_main_owerwiev_wraper__padding-mobile: 90px 30px 53px 30px;
+
+// wrapper margin
+$header_main_overview_wrapper_margin: 102.49px 150px 95.83px 150px;
+$header_main_overview_wrapper_margin-tablet: 102.49px 112px 95.83px 112px;
+$header_main_overview_wrapper_margin-ipad: 102.49px 50px 95.83px 50px;
+$header_main_overview_wrapper_margin-mobile: 102.49px 30px 95.83px 30px;
+
+// wrapper padding
+$header_main_owerwiev_wraper__padding: 0px 90.5px 0px 91px;
+$header_main_owerwiev_wraper__padding-tablet: 0px 68.5px 0px 69px;
+$header_main_owerwiev_wraper__padding-ipad: 0px 46.5px 0px 47px;
+$header_main_owerwiev_wraper__padding-mobile: 0px 24.5px 0px 25px;
 // container
-$header_main_owerwiev_container__padding: 0px 90.5px 0px 91px;
-$header_main_owerwiev_container__padding-tablet: 0px 68.5px 0px 69px;
-$header_main_owerwiev_container__padding-ipad: 0px 46.5px 0px 47px;
-$header_main_owerwiev_container__padding-mobile: 0px 24.5px 0px 25px;
+$header_main_owerwiev_container__padding: 0px 90.5px 42.02px 91px;
+$header_main_owerwiev_container__padding-tablet: 0px 46.5px 42.02px 47px;
+$header_main_owerwiev_container__padding-ipad: 0px 24.5px 42.02px 25px;
+$header_main_owerwiev_container__padding-mobile: 0px 10.5px 42.02px 11px;
+
+// -----------------------------------------
+// COMPANY FEATURES
+// -----------------------------------------
+
+// wrapper margin
+$main_features_wrapper-margine: 0px 150px 126.73px 184.52px;
+$main_features_wrapper-margine-tablet: 0px 110px 126.73px 130.52px;
+$main_features_wrapper-margine-ipad: 0px 70px 126.73px 80.52px;
+$main_features_wrapper-margine-mobile: 0px 30px 126.73px 30.52px;

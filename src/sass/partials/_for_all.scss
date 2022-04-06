@@ -41,12 +41,16 @@ h1 {
   }
 }
 
+h2 {
+  color: $color__black;
+}
+
 p {
   font-family: $font_family_main;
   font-size: 1.6rem;
   line-height: 3rem;
-  font-family: $font_weight_main;
   font-style: normal;
+  font-weight: $font_weight_main;
 }
 
 a {
