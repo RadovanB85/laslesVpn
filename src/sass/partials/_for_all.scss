@@ -45,6 +45,21 @@ h2 {
   color: $color__black;
 }
 
+h3 {
+  text-align: center;
+  text-transform: capitalize;
+  font-size: 1.8rem;
+  line-height: 3rem;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+h4 {
+  font-weight: 700;
+  font-size: 2.5rem;
+  line-height: 3rem;
+  margin-bottom: 5px;
+}
+
 p {
   font-family: $font_family_main;
   font-size: 1.6rem;
