@@ -46,6 +46,8 @@
   border: 2px solid $color__grey_border;
   border-radius: 10px;
   padding: $main_plan_offer_item_padding;
+  margin: 0 auto;
+
   @include mobile-screens {
     width: 100%;
   }

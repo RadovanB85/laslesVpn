@@ -1,6 +1,9 @@
 .main_trusted_section_wrapper-headline {
   max-width: 447.81px;
   margin: 0 auto;
+  @include mobile-screens {
+    padding: 0px 10px;
+  }
   h2 {
     @include header2();
     text-align: center;
@@ -12,6 +15,9 @@
   max-width: 555px;
   margin: 0 auto;
   text-align: center;
+  @include mobile-screens {
+    padding: 0px 10px;
+  }
   p {
     color: $color__grey;
     margin-bottom: 60px;
@@ -20,13 +26,29 @@
 
 .main_thrusted_section_slider-wrapper {
   padding-left: 150px;
+  @include large-screens {
+    padding: $main_thrusted_section_slider_wrapper_padding;
+  }
+  @include base-width {
+    padding: $main_thrusted_section_slider_wrapper_padding-base;
+  }
+  @include tablet-screens {
+    padding: $main_thrusted_section_slider_wrapper_padding-tablet;
+  }
+  @include ipad-screens {
+    padding: $main_thrusted_section_slider_wrapper_padding-ipad;
+  }
+  @include mobile-screens {
+    padding: $main_thrusted_section_slider_wrapper_padding-mobile;
+  }
 }
 
 .main_thrusted_section_slider-container {
   display: flex;
   gap: 50px;
   overflow: hidden;
-  margin-bottom: 82.5px;
+  margin-bottom: 11.69px;
+  padding-bottom: 70.81px;
 }
 
 .main_thristed_section_slider-item {
@@ -34,12 +56,16 @@
   padding: 30px;
   border: 2px solid #dddddd;
   border-radius: 10px;
+  @include mobile-screens {
+    width: 100%;
+  }
 }
 
 .active-customers {
   border: 2px solid #f53838;
-  box-shadow: 0px 70.81px 0px 0px
-    rgba($color: $color__black_secondary, $alpha: 1);
+  border-radius: 10px;
+  box-shadow: 0px 70.81px 114px -40.82px rgba($color: $color__black_secondary, $alpha:
+        0.06);
 }
 
 .slider_item-customer {
@@ -79,4 +105,68 @@
     line-height: 2.5rem;
     color: $color__black;
   }
+}
+
+/*
+*   slider circles and arrows
+*/
+
+.main_thrusted_section_slider-buttons {
+  position: relative;
+  margin-right: 150px;
+}
+
+.slider_circle_container {
+  display: flex;
+  gap: 15px;
+  position: relative;
+  @include ipad-screens {
+    display: none;
+  }
+}
+
+.circle {
+  display: block;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: $color__main_red;
+}
+
+.scrollbar {
+  position: absolute;
+  width: 30px;
+  left: 7.5px;
+  height: 15px;
+  background-color: $color__main_red;
+}
+
+.slider_arrows_container {
+  float: right;
+  position: absolute;
+  right: 0;
+  top: -22px;
+  @include ipad-screens {
+    position: unset;
+    // float: unset;
+  }
+  .slider_arrow {
+    float: right;
+
+    margin-left: 15px;
+    width: 60px;
+    height: 60px;
+    border: 1px solid $color__main_red;
+    border-radius: 50%;
+    img {
+      position: relative;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+}
+
+.red_arrow {
+  background-color: $color__main_red;
 }
