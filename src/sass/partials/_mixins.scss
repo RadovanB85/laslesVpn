@@ -14,6 +14,23 @@
   color: #0b132a;
   font-weight: 600;
 }
+@mixin redbutton(
+  $font_size: 1.6rem,
+  $line_height: 2.5rem,
+  $font_weight: 700,
+  $padding: 1.75rem 7.75rem
+) {
+  font-size: $font_size;
+  line-height: $line_height;
+  font-style: normal;
+  font-weight: 700;
+  padding: 1.75rem 7.75rem;
+  color: #ffffff;
+  text-transform: capitalize;
+  background-color: #f53838;
+  border-radius: 10px;
+  width: fit-content;
+}
 
 @mixin clearfix() {
   &::before,

@@ -49,6 +49,10 @@
   overflow: hidden;
   margin-bottom: 11.69px;
   padding-bottom: 70.81px;
+  &:nth-child(2n),
+  &:nth-child(3n) {
+    display: none;
+  }
 }
 
 .main_thristed_section_slider-item {
@@ -114,6 +118,7 @@
 .main_thrusted_section_slider-buttons {
   position: relative;
   margin-right: 150px;
+  margin-bottom: 204.02px;
 }
 
 .slider_circle_container {
